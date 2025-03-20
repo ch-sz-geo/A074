@@ -8,13 +8,13 @@
 |=======
 |Erstelldatum | 2024-01-01
 |letzte Änderung | {docdate}
-| Themen-Nummer | Annn
+| Themen-Nummer | A074
 | ID nach kGeoiV | --- 
-| Beteiligte | Person 1 (Kürzel 1), Amt 1 + 
-Person 2 (Kürzel 2), Amt 2
-| Status a| - [ ] Entwurf 
+| Beteiligte | Sonja Stadlin (Sos), AWN + 
+Kuno Epper (Kep), AGI
+| Status a| - [x] Entwurf 
 - [ ] bereit für Vernehmlassung
-- [x] gültig
+- [ ] gültig
 |=======
 ====
 
