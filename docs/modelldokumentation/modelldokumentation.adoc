@@ -1,4 +1,4 @@
-:title: <Hier_Themenname_eingeben> (<Hier_Themennummer_eingeben>)
+:title: Überwachungsinventar Naturgefahren (A074)
 :subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
