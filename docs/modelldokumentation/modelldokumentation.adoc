@@ -1,4 +1,4 @@
-:title: <Themenname> (<Themennummer>)
+:title: <Hier_Themenname_eingeben> (<Hier_Themennummer_eingeben>)
 :subtitle: Modelldokumentation
 ifdef::backend-pdf[]
 = {title}
