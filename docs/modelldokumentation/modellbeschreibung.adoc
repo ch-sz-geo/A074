@@ -1,6 +1,8 @@
 == Modellbeschreibung
 
-<Beschreibung einfügen>
+Das Modell dient der strukturierten Erfassung und Verwaltung von Überwachungsgebieten und Messstellen zur Beobachtung von Naturgefahrenprozessen. Es ermöglicht die räumliche und zeitliche Dokumentation von Überwachungsobjekten sowie die Erfassung und Verwaltung von Messdaten.
+
+Das Modell schafft damit eine einheitliche Grundlage für die Dokumentation, Organisation und Nachverfolgung von Überwachungsmassnahmen im Bereich der Naturgefahren.
 
 ifdef::backend-pdf[]
 <<<

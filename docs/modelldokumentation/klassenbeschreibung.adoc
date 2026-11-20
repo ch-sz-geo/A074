@@ -9,33 +9,6 @@ Die Stammdaten werden durch die Abteilung Geoinformation nachgeführt und im htt
 ==== Klasse `+Katalogeintrag+`
 Die Klasse `+Katalogeintrag+` enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen.
 
-Spaltenbreite Variante 1:
-[cols="10%, 60%, 20%, 10%",options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-m| OID
-| technischer Objektidentifikator
-| ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
-m| Code
-| Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe https://www.interlis.ch/dokumentation[INTERLIS-Referenzhandbuch])
-| in_Aenderung
-| öffentlich
-m| Name
-| Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird
-| in Änderung
-| öffentlich
-m| SortierNr
-| Reihenfolge des Katalogeintrages in der Auswahlliste
-| 1
-| öffentlich
-m| Bemerkung
-| Erläuterung, welche den Katalogeintrag näher beschreibt
-| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
-| öffentlich
-|===
-
-Spaltenbreite Variante 2:
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
@@ -61,8 +34,8 @@ m| Bemerkung
 | öffentlich
 |===
 
-==== Klasse `+Standard-Katalogeintrag+`
-Die Verbindlichkeit kam mit der Aufnahme der statischen Waldgrenzen in den ÖREB-Kataster. Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+`.
+==== Klasse `+Prozess+`
+Die Klasse `+Prozess+` führt die Werte des Katalogs "Prozess". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+` und führt keine weiteren Attribute.
 
 [cols=4*,options="header"]
 |===
@@ -75,97 +48,68 @@ m|Name
 3+| Die Werte müssen eindeutig sein
 |===
 
-==== Klasse `+separate Stammdaten+`
-Über den Typ wird die Art der Geometrie festgelegt.
-
-In der Klasse `+Typ+` wurde anfänglich auch der Typ des Wirkbereiches aufgeführt. Weil ein Wirkbereich jedoch stets gleich symbolisiert wird, wurde entschieden, auf diesen Eintrag zu verzichtet.
-[cols=4*,options="header"]
-|===
-| Name | Beschreibung | Beispiel | Freigabe
-m| OID
-| technischer Objektidentifikator
-| ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
-m| Code
-| Code des Listeneintrages; entspricht in INTERLIS dem Wert der Aufzählung und muss ein gültiger INTERLIS-Name sein (siehe https://www.interlis.ch/dokumentation[INTERLIS-Referenzhandbuch])
-| ausserhalb_Bauzonen_statisch
-| öffentlich
-m| Name
-| Bezeichnung des Katalogeintrages, wie er den Nutzenden angezeigt wird
-| Waldgrenze ausserhalb Bauzone (statisch)
-| öffentlich
-m| Abkuerzung
-| Kurzform des Katalogeintrages
-| WGraB_s
-| öffentlich
-m| SortierNr
-| Reihenfolge des Katalogeintrages in der Auswahlliste
-| 2
-| öffentlich
-m| Bemerkung
-| Erläuterung, welche den Katalogeintrag näher beschreibt
-| Statische Waldgrenze in Gebieten ausserhalb der Bauzonen, in denen der Kanton eine Zunahme des Waldes verhindern will.
-| öffentlich
-m| Symbol
-| Bild des Legendeneintrages; codiert als Base64-Wert
-| iVBORw0KGg... (gekürzt)
-| öffentlich
-|===
-
-
-=== Topic `+Fachdaten+`
-Das Topic `+Fachdaten+` umfasst die eigentlichen, fachlichen Klassen des Themas.
-
-==== Klasse `+Klasse1+`
-Die Klasse `+Klasse1+` führt .....
+==== Klasse `+Zweck+`
+Die Klasse `+Zweck+` führt die Werte des Katalogs "Zweck". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+` und führt keine weiteren Attribute.
 
 [cols=4*,options="header"]
 |===
 | Name | Beschreibung | Beispiel | Freigabe
-m| OID
-| technischer Objektidentifikator
-| ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
-m| erfasstVon
-| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
-| Musterha
-| +++<span style="color:red;">intern</span>+++
-m| erfasstAm
-| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
-| 1980-03-21T15:38:12
-| öffentlich
-m| geaendertVon
-| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
-| Muelleran
-| +++<span style="color:red;">intern</span>+++
-m| geaendertAm
-| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
-| 2024-07-30T08:07:57
-| öffentlich
-m| gueltigVon
-| Datum, an dem das Objekt rechtskräftig wurde bzw. wird. Es gilt der Zeitpunkt mittags um 12:00 Uhr. Das Datum kann sowohl in der Vergangenheit wie auch in der Zukunft liegen.
-| 2024-01-01
-| öffentlich
-m| gueltigBis
-| Datum, an dem das Objekt rechtskräftig aufgehoben wurde bzw. wird. Es gilt der Zeitpunkt mittags um 12:00 Uhr. Das Datum kann sowohl in der Vergangenheit wie auch in der Zukunft liegen.
-| 2030-12-31
-| öffentlich
-m| Bemerkung
-| öffentliche Bemerkung zum Objekt
-| Das ist eine öffentliche Bemerkung
-| öffentlich
-m| Bemerkung_intern
-| Erläuterung, welche den Katalogeintrag näher beschreibt
-| Dieser Status wird für alle Objekte verwendet, bei denen aktuell eine Nachführung läuft.
-| +++<span style="color:red;">amtsintern</span>+++
-4+| *Geometrie*
-m| Geometrie
-| Geometrie des Objektes
-| (ohne Beispiel)
-| öffentlich
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
 |===
 
-Variante mit Fremdschlüssel-, Geometrie- und Bedingungsattributen:
+==== Klasse `+Kontrollintervall+`
+Die Klasse `+Kontrollintervall+` führt die Werte des Katalogs "Kontrollintervall". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+` und führt keine weiteren Attribute.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Messart+`
+Die Klasse `+Messart+` führt die Werte des Katalogs "Messart". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+` und führt keine weiteren Attribute.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+==== Klasse `+Einheit+`
+Die Klasse `+Einheit+` führt die Werte des Katalogs "Einheit". Sie ist eine Spezialisierung der Klasse `+Katalogeintrag+` und führt keine weiteren Attribute.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| _Diese Klasse führt keine zusätzlichen Attribute_
+4+| *Anforderungen*
+m|Code
+3+| Die Werte müssen eindeutig sein
+m|Name
+3+| Die Werte müssen eindeutig sein
+|===
+
+
+=== Topic `+Ueberwachungsinventare+`
+Das Topic `+Ueberwachungsinventare+` umfasst die eigentlichen, fachlichen Klassen des Themas.
+
+==== Klasse `+Ueberwachungsgebiet+`
+Die Klasse `+Ueberwachungsgebiet+` führt die Perimeter der Gebiete, welche überwacht werden.
 
 [cols=4*,options="header"]
 |===
@@ -178,59 +122,71 @@ m| OID
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| intern
+| +++<span style="color:red;">intern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| intern
+| öffentlich
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| intern
+| +++<span style="color:red;">intern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| intern
-m| Kennung
-| fortlaufende, einfach aufgebaute Kennung, welche sich zur Identifikation eignet
-| GA1159
 | öffentlich
-m| KennungAlt
-| Nummer aus dem alten geologischen Archiv; entspricht "IDAlternate" aus DM_GeolAssets_V2
-| GA01.2.1461
+m| Name
+| Bezeichnung des Überwachungsgebietes
+| Schwyz_Beispielberg
 | öffentlich
-m| Titel
-| Titel des Dokuments; entspricht "IDAlternate" aus DM_GeolAssets_V2
-| UVP:GeolGeotecGutachtenzumVorprojekt
+m| Beschreibung
+| Beschrieb des Überwachungsgebietes
+| Überwachung der Rutschung am Beispielberg
 | öffentlich
-m| Erstelldatum
-| Datum des Berichtes; entspricht "DateCreation" aus DM_GeolAssets_V2
-| 1985-03-21
+m| gueltigVon
+| Datum, ab dem das Objekt überwacht wird
+| 2024-01-01
 | öffentlich
-m| Dokumentlink
-| Link, über den auf das Dokument zugegrifen werden kann; Pfad zum Speicher- bzw. Ablageort des Dokuments
-| Q:\...\2021-01-18-0303_NB_Standseilbahn_Stoos_Bauproj_KL.pdf
+m| gueltigBis
+| Datum, bis wann das Objekt überwacht wurde
+| 2030-12-31
 | öffentlich
-m| Baugesuchsnummer
-| Kennung des Baugesuches, welches mit dem Dokument in Verbindung steht
-| B2019-0421
+m| Schadenpotential
+| Beschrieb des Schadenpotentials
+| Siedlugnsgebiete
 | öffentlich
-m| Autor
-| Kennung der Objekt-ID des Unternehmens, welches den Bericht verfasst hat. Auf eine ausmodellierte Beziehung wird der Einfachheit halber verzichtet, so dass hier nur die ID eingetragen werden muss.
-| 2a150ef7-eb3d-4661-99d6-52d6eb7a5fd0
+m| Link
+| URL zu einer Webseite
+| https://ueberwachungsportal.ch
 | öffentlich
 m| Bemerkung
-| Kommentar zum entsprechenden Dokument; entspricht "Description" aus DM_GeolAssets_V2
-| Das ist meine Bemerkung zu diesem Dokument.
+| Bemerkung zum Objekt
+| Das ist eine Bemerkung
 | öffentlich
 4+| *Beziehungsattribute*
-m| rGeometrie
-| Fremdschlüssel zur Geometrie, welche mit dem Dokument verknüpft ist.
+m| rAuftraggeberMessung
+| Fremdschlüssel zur Klasse `+Organisation+`
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
 | öffentlich
-m| rInhalt
-| Fremdschlüssel zum Inhalt (Stammdaten); entspricht "Kind" aus DM_GeolAssets_V2
-| e0807260-956b-40a2-871a-e32c51ebf192 (für "Bohrprofil")
+m| rMessverantwortung
+| Fremdschlüssel zur Klasse `+Organisation+`
+| ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
+| öffentlich
+m| rAuswerterMessung
+| Fremdschlüssel zur Klasse `+Organisation+`
+| 2f608539-40fd-4b6c-a61f-32c00f0ef254
+| öffentlich
+m| rProzess
+| Fremdschlüssel zum Katalog "Prozess"
+| ca18dcff-cce7-419c-9fa8-a4a5a6783829
+| öffentlich
+m| rZweck
+| Fremdschlüssel zum zum Katalog "Zweck"
+| 6128aa66-bac0-4a74-9595-41b189b15d5b
+| öffentlich
+m| rKontrollintervall
+| Fremdschlüssel zum Katalog "Kontrollintervall"
+| e0807260-956b-40a2-871a-e32c51ebf192
 | öffentlich
 4+| *Geometrie*
 m| Geometrie
@@ -238,15 +194,334 @@ m| Geometrie
 | (ohne Beispiel)
 | öffentlich
 4+| *Bedingungen*
-m|Kennung
-3+a| * Die Werte müssen innerhalb der Klasse eindeutig sein.
-* Nach der Vergabe muss der Wert unverändert bleiben.
+m| Name
+3+| Die Werte müssen innerhalb der Klasse eindeutig sein.
 |===
 
-[%header, cols="10%, 10%, 10%, 60%, 10%", format=csv, separator=;]
-|=======
-include::../table/klasse_katalogeintrag.csv[]
-|=======
+
+==== Klasse `+Messstelle+`
+Die Klasse `+Messstelle+` führt die Standorte, an welchen gemessen oder beobachtet wird und ist abstrakt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Name
+| Bezeichnung der Messstelle
+| P1
+| öffentlich
+m| gueltigVon
+| Datum, ab wann die Messstelle in Betrieb ist
+| 2024-01-01
+| öffentlich
+m| gueltigBis
+| Datum, an dem die Messstelle aufgehoben
+| 2030-12-31
+| öffentlich
+m| Bemerkung
+| Bemerkung zum Objekt
+| Das ist eine Bemerkung
+| öffentlich
+4+| *Beziehungsattribute*
+m| rUeberwachungsgebiet
+| Fremdschlüssel zur Klasse `+Ueberwachungsgebiet+`
+| b039460a-6669-4eef-b5db-5266deb47329
+| öffentlich
+m| rAuftragnehmerMessung
+| Fremdschlüssel zur Klasse `+Organisation+`
+| ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
+| öffentlich
+m| rMessart
+| Fremdschlüssel zum Katalog "Messart"
+| 2f608539-40fd-4b6c-a61f-32c00f0ef254
+| öffentlich
+m| rEinheit
+| Fremdschlüssel zum Katalog "Einheit"
+| ca18dcff-cce7-419c-9fa8-a4a5a6783829
+| öffentlich
+|===
+
+
+==== Klasse `+Messpunkt+`
+Die Klasse `+Messpunkt+` führt die Messpunkte und ist eine Spezialisierung der Klasse `+Messstelle+`.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| 6c71fb4a-d136-44f4-8797-43c33cb9e109
+| öffentlich
+4+| *Geometrie*
+m| Standort
+| Geometrie des Objektes
+| (ohne Beispiel)
+| öffentlich
+|===
+
+==== Klasse `+Messlinie+`
+Die Klasse `+Messlinie+` führt die Lage der gemessenen Distanzen und ist eine Spezialisierung der Klasse `+Messstelle+`.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| 0377874f-39b5-4075-8d81-3cdff48b976a
+| öffentlich
+4+| *Geometrie*
+m| Messlinie
+| Geometrie des Objektes
+| (ohne Beispiel)
+| öffentlich
+|===
+
+==== Klasse `+Einzelmessung+`
+Die Klasse `+Einzelmessung+` führt die Angaben einer einzelnen Messung und ist abstrakt.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| gemessenAm
+| Datum und Zeit, an dem die Messung vorgenommen wurde
+| 2024-01-01T10:27:05
+| öffentlich
+m| gemessenVon
+| Name der Person, welche die Messung vorgenommen hat
+| Muelleran
+| öffentlich
+m| Bemerkung
+| Bemerkung zum Objekt
+| Das ist eine Bemerkung
+| öffentlich
+4+| *Beziehungsattribute*
+m| rMessstelle
+| Fremdschlüssel zur Klasse `+Messstelle+`
+| b039460a-6669-4eef-b5db-5266deb47329
+| öffentlich
+m| rGeraet
+| Fremdschlüssel zur Klasse `+Geraet+`
+| ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
+| öffentlich
+|===
+
+
+==== Klasse `+Koordinaten+`
+Die Klasse `+Koordinaten+` führt die gemessenen Koordinaten und ist eine Spezialisierung der Klasse `+Einzelmessung+`.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| 0377874f-39b5-4075-8d81-3cdff48b976a
+| öffentlich
+m| dX_Nullmessung
+| Differenz der gemessenen x-Koordinate zur x-Koordinate der Nullmessung
+| -4.3
+| öffentlich
+m| dY_Nullmessung
+| Differenz der gemessenen y-Koordinate zur y-Koordinate der Nullmessung
+| -5.1
+| öffentlich
+m| dZ_Nullmessung
+| Differenz der gemessenen z-Koordinate zur z-Koordinate der Nullmessung
+| 0.9
+| öffentlich
+m| dX_Vormessung
+| Differenz der gemessenen x-Koordinate zur x-Koordinate der Vormessung
+| 2.5
+| öffentlich
+m| dY_Vormessung
+| Differenz der gemessenen y-Koordinate zur y-Koordinate der Vormessung
+| 5.4
+| öffentlich
+m| dZ_Vormessung
+| Differenz der gemessenen z-Koordinate zur z-Koordinate der Vormessung
+| -2.1
+| öffentlich
+|===
+
+
+==== Klasse `+Messwert+`
+Die Klasse `+Messwert+` führt die gemessenen Werte (ausser Koordinaten) und ist eine Spezialisierung der Klasse `+Einzelmessung+`.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| 0377874f-39b5-4075-8d81-3cdff48b976a
+| öffentlich
+m| Wert
+| gemessener Wert
+| 25.9
+| öffentlich
+m| istNullmessung
+| Angabe, ob es sich um eine Nullmessung handelt oder nicht
+| wahr
+| öffentlich
+|===
+
+
+==== Klasse `+Dokument+`
+Die Klasse `+Dokument+` führt die Angaben zu den Unterlagen.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| URL
+| Pfad zum Dokument
+| A:\Dokumente\Ueberwachung.pdf
+| öffentlich
+4+| *Beziehungsattribute*
+m| rUeberwachungsgebiet
+| Fremdschlüssel zur Klasse `+Ueberwachungsgebiet+`
+| b039460a-6669-4eef-b5db-5266deb47329
+| öffentlich
+m| rMessstelle
+| Fremdschlüssel zur Klasse `+Messstelle+`
+| ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
+| öffentlich
+|===
+
+
+==== Klasse `+Organisation+`
+Die Klasse `+Organisation+` führt die Informationen zu den Organisatione, Firmen und Personen.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Name
+| Bezeichnung der Organisation
+| Organisation AG
+| öffentlich
+m| Ort
+| Standort der Organisation
+| Schwyz
+| öffentlich
+|===
+
+
+==== Klasse `+Geraet+`
+Die Klasse `+Geraet+` führt die Messgeräte.
+
+[cols=4*,options="header"]
+|===
+| Name | Beschreibung | Beispiel | Freigabe
+4+| *Fachattribute*
+m| OID
+| technischer Objektidentifikator
+| ceaa37a9-8614-43fc-9a8b-688f95c30218
+| öffentlich
+m| erfasstVon
+| Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
+| Musterha
+| +++<span style="color:red;">intern</span>+++
+m| erfasstAm
+| Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
+| 1980-03-21T15:38:12
+| öffentlich
+m| geaendertVon
+| Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
+| Muelleran
+| +++<span style="color:red;">intern</span>+++
+m| geaendertAm
+| Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
+| 2024-07-30T08:07:57
+| öffentlich
+m| Name
+| Bezeichnung des Geräts
+| Messband
+| öffentlich
+|===
 
 ifdef::backend-pdf[]
 <<<

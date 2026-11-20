@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ili:transfer
+  xmlns="http://www.interlis.ch/xtf/2.4/SZ_Ueberwachungsinventar_Naturgefahrenprozesse_V2"
+  xmlns:ili="http://www.interlis.ch/xtf/2.4/INTERLIS"
+  xmlns:geom="http://www.interlis.ch/geometry/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:Units="http://www.interlis.ch/xtf/2.4/Units">
+  <ili:headersection>
+    <ili:models>
+      <ili:model>SZ_Ueberwachungsinventar_Naturgefahrenprozesse_V2</ili:model>
+    </ili:models>
+    <ili:sender>AGI SZ: FME, Python</ili:sender>
+  </ili:headersection>
+  <ili:datasection>
+    <Stammdaten ili:bid="ch.sz.a074.stammdaten.2000-01-01">
+      <Einheit ili:tid="293c5b46-5938-436a-b6f7-634f93c8f8b8"><Name>Verschiebung [mm]</Name><Code>Verschiebung_mm</Code><SortierNr>0</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="f856b479-f752-46e4-9408-7df98828033c"><Name>Deformation [mm]</Name><Code>Deformation_mm</Code><SortierNr>6</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="c35cb4b3-455d-4ebd-97d0-213cb288b70f"><Name>Rotation [cm]</Name><Code>Rotation_cm</Code><SortierNr>5</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="90d12b52-a973-4f8a-8244-9dbc45d63eba"><Name>Rotation [mm]</Name><Code>Rotation_mm</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="7a5b1f75-d560-4b6a-ba3b-623f11c9bb0f"><Name>Distanz [m]</Name><Code>Distanz_m</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="2a5edc83-8b69-438d-a61e-f6a8cd081da9"><Name>Distanz [cm]</Name><Code>Distanz_cm</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="565009ea-1f85-42b0-805b-a44674ae1ef8"><Name>Distanz [mm]</Name><Code>Distanz_mm</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="d0ee1be5-2fac-4964-96fd-4c220af029b8"><Name>visueller Vergleich</Name><Code>visueller_Vergleich</Code><SortierNr>7</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="ef39c46a-586e-4f50-94ad-73b04f12a9e0"><Name>andere</Name><Code>andere</Code><SortierNr>98</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Einheit ili:tid="882ad15b-7d72-4f32-becd-92d3a0712d3d"><Name>unbekannt</Name><Code>unbekannt</Code><SortierNr>99</SortierNr><Bemerkung></Bemerkung></Einheit>
+      <Kontrollintervall ili:tid="eaad4137-e956-4bc3-b467-85f0238fa50f"><Name>andere</Name><Code>andere</Code><SortierNr>98</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="a95c0c4c-8555-4769-aff2-dc87cfd64002"><Name>unbekannt</Name><Code>unbekannt</Code><SortierNr>99</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="50f067bd-8cb8-4e23-b4fe-bd32f88eaa19"><Name>wöchentlich</Name><Code>woechentlich</Code><SortierNr>0</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="2cc254e0-34ef-4344-9bfa-31e5bfce24c5"><Name>zweiwöchentlich</Name><Code>zweiwoechentlich</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="79e9d248-afbe-468d-ba08-fb72561ddef1"><Name>monatlich</Name><Code>monatlich</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="007f736d-0bbd-4db8-a8c3-0420aa3540fc"><Name>vierteljährlich</Name><Code>vierteljaehrlich</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="634e8679-f31e-4214-85f8-02881bb55fc9"><Name>halbjährlich</Name><Code>halbjaehrlich</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="e7fce523-c08a-49b9-b975-29bb02eb9f5a"><Name>jährlich</Name><Code>jaehrlich</Code><SortierNr>5</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="36f95e3e-2840-4479-bffb-74542d756b07"><Name>2-jährlich</Name><Code>zweijaehrlich</Code><SortierNr>6</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Kontrollintervall ili:tid="00035086-fd79-4a82-84d1-0044e00b5b9d"><Name>3-jährlich</Name><Code>dreijaehrlich</Code><SortierNr>7</SortierNr><Bemerkung></Bemerkung></Kontrollintervall>
+      <Messart ili:tid="d94c210b-a82c-4cd0-9206-bd088903fd65"><Name>Theodolit</Name><Code>Theodolit</Code><SortierNr>0</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="1121e678-edb1-4af1-965f-866fe7ff21a9"><Name>Differenzial GPS</Name><Code>Differenzial_GPS</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="ccb92b21-0dff-468e-81bb-c71474a0e70e"><Name>Laser</Name><Code>Laser</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="1871e392-9cad-489d-aeba-28e84abc0e15"><Name>Rissmonitor</Name><Code>Rissmonitor</Code><SortierNr>4</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="983ed6f0-0d48-402d-8995-8d42ad20757e"><Name>Extensometer</Name><Code>Extensometer</Code><SortierNr>5</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="dd6884b5-3eb2-46d9-8a4e-112c74386d83"><Name>Reissleine</Name><Code>Reissleine</Code><SortierNr>6</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="444b0012-2604-4fb9-8224-a2c9414d63a9"><Name>Visurleine</Name><Code>Visurleine</Code><SortierNr>7</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="7e8d8cd5-647b-41ba-b2e1-d3be807b4280"><Name>visuelle Überwachung</Name><Code>visuelle_Ueberwachung</Code><SortierNr>8</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="b0c45d76-bcec-47eb-b36a-825c09c1fad5"><Name>Inklinometer</Name><Code>Inklinometer</Code><SortierNr>9</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="12fb9368-29a2-4f3f-8615-350980a84194"><Name>andere</Name><Code>andere</Code><SortierNr>98</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="aa6bc623-282d-4ddc-ab38-d95f1340d719"><Name>unbekannt</Name><Code>unbekannt</Code><SortierNr>99</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="c0d17007-5fa0-4043-9cb4-a52b5a80685a"><Name>Mikroseismik</Name><Code>Mikroseismik</Code><SortierNr>10</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="95aa9a17-99f4-4b1a-ac34-ad466309b3b6"><Name>Frühwarnanlage</Name><Code>Fruehwarnanlage</Code><SortierNr>11</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Messart ili:tid="b532d27a-e0c2-4582-9a06-c914b958df49"><Name>Handmessung</Name><Code>Handmessung</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Messart>
+      <Prozess ili:tid="4cf361de-4923-4508-993a-f1a63ae87f48"><Name>Lawine</Name><Code>Lawine</Code><SortierNr>3</SortierNr><Bemerkung></Bemerkung></Prozess>
+      <Prozess ili:tid="443162e2-2750-42da-9679-856a670de0ef"><Name>Sturz</Name><Code>Sturz</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Prozess>
+      <Prozess ili:tid="cef9a73c-00df-4736-9e48-04cc2d9276b3"><Name>Rutschung</Name><Code>Rutschung</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Prozess>
+      <Prozess ili:tid="20d3f2de-81dd-4120-9bee-93713d04af64"><Name>Wasser</Name><Code>Wasser</Code><SortierNr>0</SortierNr><Bemerkung></Bemerkung></Prozess>
+      <Zweck ili:tid="30d61fdd-ae90-4a71-a67b-beb9bafa9bf5"><Name>Warnung</Name><Code>Warnung</Code><SortierNr>2</SortierNr><Bemerkung></Bemerkung></Zweck>
+      <Zweck ili:tid="93573d4e-8507-42ab-ad4e-076db6d78c54"><Name>Überwachung</Name><Code>Ueberwachung</Code><SortierNr>1</SortierNr><Bemerkung></Bemerkung></Zweck>
+      <Zweck ili:tid="e0284802-49ea-44c8-9a16-ea55080461b6"><Name>Alarmierung</Name><Code>Alarmierung</Code><SortierNr>0</SortierNr><Bemerkung></Bemerkung></Zweck>
+    </Stammdaten>
+  </ili:datasection>
+</ili:transfer>
