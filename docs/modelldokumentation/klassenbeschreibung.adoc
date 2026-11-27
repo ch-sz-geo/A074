@@ -118,81 +118,81 @@ Die Klasse `+Ueberwachungsgebiet+` führt die Perimeter der Gebiete, welche übe
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Name
 | Bezeichnung des Überwachungsgebietes
 | Schwyz_Beispielberg
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Beschreibung
 | Beschrieb des Überwachungsgebietes
 | Überwachung der Rutschung am Beispielberg
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gueltigVon
 | Datum, ab dem das Objekt überwacht wird
 | 2024-01-01
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gueltigBis
 | Datum, bis wann das Objekt überwacht wurde
 | 2030-12-31
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Schadenpotential
 | Beschrieb des Schadenpotentials
 | Siedlugnsgebiete
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Link
 | URL zu einer Webseite
 | https://ueberwachungsportal.ch
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Bemerkung
 | Bemerkung zum Objekt
 | Das ist eine Bemerkung
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Beziehungsattribute*
 m| rAuftraggeberMessung
 | Fremdschlüssel zur Klasse `+Organisation+`
 | ccee2bad-419e-454e-9e0f-9ef2ae2d4d44
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rMessverantwortung
 | Fremdschlüssel zur Klasse `+Organisation+`
 | ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rAuswerterMessung
 | Fremdschlüssel zur Klasse `+Organisation+`
 | 2f608539-40fd-4b6c-a61f-32c00f0ef254
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rProzess
 | Fremdschlüssel zum Katalog "Prozess"
 | ca18dcff-cce7-419c-9fa8-a4a5a6783829
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rZweck
 | Fremdschlüssel zum zum Katalog "Zweck"
 | 6128aa66-bac0-4a74-9595-41b189b15d5b
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rKontrollintervall
 | Fremdschlüssel zum Katalog "Kontrollintervall"
 | e0807260-956b-40a2-871a-e32c51ebf192
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Geometrie*
 m| Geometrie
 | Geometrie des Objektes
 | (ohne Beispiel)
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Bedingungen*
 m| Name
 3+| Die Werte müssen innerhalb der Klasse eindeutig sein.
@@ -209,56 +209,56 @@ Die Klasse `+Messstelle+` führt die Standorte, an welchen gemessen oder beobach
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Name
 | Bezeichnung der Messstelle
 | P1
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gueltigVon
 | Datum, ab wann die Messstelle in Betrieb ist
 | 2024-01-01
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gueltigBis
 | Datum, an dem die Messstelle aufgehoben
 | 2030-12-31
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Bemerkung
 | Bemerkung zum Objekt
 | Das ist eine Bemerkung
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Beziehungsattribute*
 m| rUeberwachungsgebiet
 | Fremdschlüssel zur Klasse `+Ueberwachungsgebiet+`
 | b039460a-6669-4eef-b5db-5266deb47329
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rAuftragnehmerMessung
 | Fremdschlüssel zur Klasse `+Organisation+`
 | ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rMessart
 | Fremdschlüssel zum Katalog "Messart"
 | 2f608539-40fd-4b6c-a61f-32c00f0ef254
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rEinheit
 | Fremdschlüssel zum Katalog "Einheit"
 | ca18dcff-cce7-419c-9fa8-a4a5a6783829
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -272,12 +272,12 @@ Die Klasse `+Messpunkt+` führt die Messpunkte und ist eine Spezialisierung der 
 m| OID
 | technischer Objektidentifikator
 | 6c71fb4a-d136-44f4-8797-43c33cb9e109
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Geometrie*
 m| Standort
 | Geometrie des Objektes
 | (ohne Beispiel)
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 ==== Klasse `+Messlinie+`
@@ -290,12 +290,12 @@ Die Klasse `+Messlinie+` führt die Lage der gemessenen Distanzen und ist eine S
 m| OID
 | technischer Objektidentifikator
 | 0377874f-39b5-4075-8d81-3cdff48b976a
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Geometrie*
 m| Messlinie
 | Geometrie des Objektes
 | (ohne Beispiel)
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 ==== Klasse `+Einzelmessung+`
@@ -308,44 +308,44 @@ Die Klasse `+Einzelmessung+` führt die Angaben einer einzelnen Messung und ist 
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gemessenAm
 | Datum und Zeit, an dem die Messung vorgenommen wurde
 | 2024-01-01T10:27:05
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| gemessenVon
 | Name der Person, welche die Messung vorgenommen hat
 | Muelleran
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Bemerkung
 | Bemerkung zum Objekt
 | Das ist eine Bemerkung
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Beziehungsattribute*
 m| rMessstelle
 | Fremdschlüssel zur Klasse `+Messstelle+`
 | b039460a-6669-4eef-b5db-5266deb47329
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rGeraet
 | Fremdschlüssel zur Klasse `+Geraet+`
 | ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -359,31 +359,31 @@ Die Klasse `+Koordinaten+` führt die gemessenen Koordinaten und ist eine Spezia
 m| OID
 | technischer Objektidentifikator
 | 0377874f-39b5-4075-8d81-3cdff48b976a
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dX_Nullmessung
 | Differenz der gemessenen x-Koordinate zur x-Koordinate der Nullmessung
 | -4.3
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dY_Nullmessung
 | Differenz der gemessenen y-Koordinate zur y-Koordinate der Nullmessung
 | -5.1
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dZ_Nullmessung
 | Differenz der gemessenen z-Koordinate zur z-Koordinate der Nullmessung
 | 0.9
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dX_Vormessung
 | Differenz der gemessenen x-Koordinate zur x-Koordinate der Vormessung
 | 2.5
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dY_Vormessung
 | Differenz der gemessenen y-Koordinate zur y-Koordinate der Vormessung
 | 5.4
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| dZ_Vormessung
 | Differenz der gemessenen z-Koordinate zur z-Koordinate der Vormessung
 | -2.1
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -397,15 +397,15 @@ Die Klasse `+Messwert+` führt die gemessenen Werte (ausser Koordinaten) und ist
 m| OID
 | technischer Objektidentifikator
 | 0377874f-39b5-4075-8d81-3cdff48b976a
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Wert
 | gemessener Wert
 | 25.9
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| istNullmessung
 | Angabe, ob es sich um eine Nullmessung handelt oder nicht
 | wahr
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -419,36 +419,36 @@ Die Klasse `+Dokument+` führt die Angaben zu den Unterlagen.
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| URL
 | Pfad zum Dokument
 | A:\Dokumente\Ueberwachung.pdf
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 4+| *Beziehungsattribute*
 m| rUeberwachungsgebiet
 | Fremdschlüssel zur Klasse `+Ueberwachungsgebiet+`
 | b039460a-6669-4eef-b5db-5266deb47329
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| rMessstelle
 | Fremdschlüssel zur Klasse `+Messstelle+`
 | ed8ec310-9d17-4fd8-bd5b-c65bd57f9497
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -462,31 +462,31 @@ Die Klasse `+Organisation+` führt die Informationen zu den Organisatione, Firme
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Name
 | Bezeichnung der Organisation
 | Organisation AG
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Ort
 | Standort der Organisation
 | Schwyz
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 
@@ -500,27 +500,27 @@ Die Klasse `+Geraet+` führt die Messgeräte.
 m| OID
 | technischer Objektidentifikator
 | ceaa37a9-8614-43fc-9a8b-688f95c30218
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstVon
 | Loginname der Person, welche den Datensatz erstellt hat (Autor); wird durch das System gesetzt
 | Musterha
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| erfasstAm
 | Datum und Zeit, an dem der Datensatz erstellt wurde; wird durch das System gesetzt
 | 1980-03-21T15:38:12
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertVon
 | Loginname der Person, welche den Datensatz zuletzt geändert hat (Editor); wird durch das System gesetzt
 | Muelleran
-| +++<span style="color:red;">intern</span>+++
+| +++<span style="color:red;">amtsintern</span>+++
 m| geaendertAm
 | Datum und Zeit, an dem der Datensatz zuletzt geändert wurde; wird durch das System gesetzt
 | 2024-07-30T08:07:57
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 m| Name
 | Bezeichnung des Geräts
 | Messband
-| öffentlich
+| +++<span style="color:red;">amtsintern</span>+++
 |===
 
 ifdef::backend-pdf[]
