@@ -13,9 +13,9 @@
 | Beteiligte | Sonja Stadlin (ST), AWN + 
 Kuno Epper (Kep), AGI +
 Silvana Deplazes (sde), AGI
-| Status a| - [x] Entwurf 
+| Status a| - [ ] Entwurf 
 - [ ] bereit für Vernehmlassung
-- [ ] gültig
+- [x] gültig
 |=======
 ====
 

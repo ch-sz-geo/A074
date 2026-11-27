@@ -1,14 +1,16 @@
 = Dateibeschreibung
 
-Die Datei `+Stammdaten.xtf+` enthält die Stammdaten. Alle Änderungen an dieser Datei werden dort vorgenommen und über GitHub mit einer eindeutigen Identifikationsnummer (Commit-Hash-ID) versehen. Mithilfe dieser ID können frühere Versionen der Datei jederzeit abgerufen werden.
+Bei der Bewirtschaftung eines Themas gibt es Attribute, deren Werte nicht frei erfasst, sondern aus einem vorgegebenen Katalog selektiert werden müssen (z.B. Gemeindenamen aus dem Katalog der Schwyzer Gemeinden). Die Gesamtheit der Kataloge eines Themas wird als "Stammdaten" bezeichnet. Sie werden in einer eigenen Datei gehalten (`+Stammdaten.xtf+`) und bilden eine Voraussetzung für die Datenerfassung.
 
-Die folgende Tabelle fasst die relevanten Versionen der Stammdaten zusammen:
+Änderungen am Datenmodell und/oder Änderungen an den Stammdaten führen zu Anpassungen in der Datei `+Stammdaten.xtf+`. Die nachfolgende Tabelle zeigt, welche Stammdaten bei welchem Datenmodell zu verwenden sind.
 
-[cols=*,options="header"]
+[cols="30%, 20%, 40%, 10%",options="header"]
 |===
-| Dateiname | Beschreibung | Modell (Version) | aktuell
-| https://raw.githubusercontent.com/ch-sz-geo/A057/main/data/Stammdaten.xtf[*Stammdaten.xtf*]
+| Modell +
+(Version) | gültig ab | Beschreibung | Link
+| SZ_Ueberwachungsinventar_Naturgefahrenprozesse_V2 +
+(2026-02-06)
+| 2000-01-01
 | Diese Datei enthält die aktuell gültigen Stammdaten für die Datenerfassung.
-| SZ_Ueberwachungsinventar_Naturgefahrenprozesse_V2 (2026-02-06)
-^a| ✅
+| https://raw.githubusercontent.com/ch-sz-geo/A074/main/data/Stammdaten.xtf[*Datei*]
 |===
